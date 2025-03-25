@@ -12,3 +12,8 @@ Finalizada e ajustada, a página ficou como a imagem abaixo:
 
 https://github.com/user-attachments/assets/b4f5e6ab-4817-42d8-b797-e7e2ffb424f7
 
+
+
+### Site pronto: 
+
+https://zanirato.github.io/js-projeto/
