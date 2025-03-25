@@ -18,21 +18,228 @@
 </head>
 <body>
   <!-- Navegação -->
+  <nav>
+    <ul class="navlist">
+      <li class="active"><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+
+    <div>
+      <ul class="social-network">
+        <li>
+          <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/julia-zanirato-1167b2355/" target="_blank">
+            <figure id="fig1"></figure>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Zanirato" target="_blank">
+            <figure id="fig2"></figure>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Ícone do menu mobile -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </nav>
   
   <!-- Conteúdo principal -->
   <main>
     <!-- Seção Home -->
-    
-    <!-- Seção Sobre Mim -->
-  
-    <!-- Seção de Projetos -->
-   
-    <!-- Seção de Contato -->
+    <section id="home" class="home">
+      <div class="home-presentation">
+        <p class="my-name">Meu nome é</p>
+        <h1 id="name">JULIA</h1>
+        <h1 id="last-name">ZANIRATO</h1>
+        <h3><p>sou</p> Desenvolvedor Web <span><strong>|</strong>Full-stack</span></h3>
+        <div class="button">
+          <a href="#projects" class="project-button">Projetos</a>
+          <a href="#contact" class="contact-button">Contato</a>
+        </div>
+      </div>
+      <img src="img/principal.jpg" alt="laptop" class="home-mac">
+    </section>
 
+
+    <!-- Seção Sobre Mim -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/eu.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2><span>SOBRE</span>MIM</h2>
+        <p>
+          Olá! Sou Zani e tenho 17 anos. Sou uma desenvolvedora Fullstack apaixonada por criar sites completos e diferenciados.
+          Minha jornada no mundo da programação começou com a curiosidade de entender como as aplicações web funcionam, desde o que o usuário consegue ver até os processos complexos que acontecem no servidor por trás do que apenas visual.
+        </p>
+        <p>
+          Como desenvolvedor Fullstack, procuro solucionar os problemas de um sistema, também trazendo uma experiência maravilhosa pelos usuários que irão utilizá-lo. 
+        </p>
+        <button class="button-cv">
+          <a href="assets/curriculo-front-end.pdf" download="CV - CodeMaster Dev" class="btn-cv"> Download CV </a>
+        </button>
+      </div>
+      <img src="img/balls.svg" alt="balls" class="balls">
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section class="skills" id="skills">
+      <div class="line"></div>
+      <div class="tech">
+        <h2>TECNOLOGIAS</h2>
+        <div class="techs">
+          <div class="card">
+            <img src="img/html-icon.svg" alt="icone HTML">
+            <p>HTML</p>
+          </div>
+          <div class="card">
+            <img src="img/css-icon.svg" alt="icone CSS">
+            <p>CSS</p>
+          </div>
+          <div class="card">
+            <img src="img/javascript.svg" alt="icone javascript">
+            <p>JavaScript</p>
+          </div>
+          <div class="card">
+            <img src="img/sql-icon.svg" alt="icone SQl">
+            <p>SQL</p>
+          </div>
+          <div class="card">
+            <img src="img/git-icon.svg" alt="icone git">
+            <p>Git</p>
+          </div>
+          <div class="card">
+            <img src="img/icons8-power-bi (1).svg" alt="icone Power BI">
+            <p>Power Bi</p>
+          </div>
+          <div class="card">
+            <img src="img/icons8-excel (1).svg" alt="icone Excel">
+            <p>Excel</p>
+          </div>
+          <div class="card">
+            <img src="img/node-js-icon.svg" alt="icone node.js">
+            <p>Node.js</p>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="tool">
+        <h2>FERRAMENTAS</h2>
+        <div class="tools">
+          <div class="card">
+            <img src="img/github-icon.svg" alt="Icone GitHub">
+            <p>GitHub</p>
+          </div>
+          <div class="card">
+            <img src="img/figma-icon.svg" alt="Icone Figma">
+            <p>Figma</p>
+          </div>
+          <div class="card">
+            <img src="img/vs-code-icon.svg" alt="Icone Vscode">
+            <p>VSCode</p>
+          </div>
+          <div class="card">
+            <img src="img/notion-icon.svg" alt="Icone notion">
+            <p>Notion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects" class="projects">
+      <div class="line"></div>
+      <div class="main-text">
+        <h2>Meus <span>Projetos</span></h2>
+      </div>
+
+      <!-- container do carrossel -->
+       <div class="carousel-container">
+        <!-- botões de navegação -->
+        <button class="carousel-button prev" aria-label="Projeto anterior">&#10094;</button>
+        <button class="carousel-button next" aria-label="Próximo projeto">&#10095;</button>
+        <!-- Slides do carrossel -->
+        <div class="carousel-slides">
+          <!-- Slide 1 -Login  -->
+          <div class="carousel-slide active">
+            <div class="row">
+              <img src="img/login-land-rover.png" alt="print página de login">
+              <div class="layer">
+                <h5>Tela de login</h5>
+                <p>Esse repositório e uma atualização/melhoria de repositório anterior "formulario-login". Nele utilizo apenas HTML e CSS. </p>
+              </div>
+            </div>
+          </div>  
+          <!-- Slide 2 - Cronômetro -->
+          <div class="carousel-slide">
+            <div class="row">
+              <img src="img/cronometro.png" alt="print cronometro">
+              <div class="layer">
+                <h5>Relógio Digital</h5>
+                <p>Desenvolvido um relógio digital utilizando HTML, CSS e JS. </p>
+              </div>
+            </div>
+          </div>  
+          <!-- Slide 3 - Formulário -->
+          <div class="carousel-slide">
+            <div class="row">
+              <img src="img/form.png" alt="print página de form">
+              <div class="layer">
+                <h5>Formulário de avaliação</h5>
+                <p>Desenvolvido formulário da mentoria.</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <div class="main-text">
+          <h2>Entre em <span>contato</span></h2>
+        </div>
+      </div>
+      <div class="contact-form">
+        <!-- Serviço gratuito (formsubmit) que envia os dados para o e-mail descrito abaixo -->
+         <form action="https://formsubmit.co?juliazaniratoo.com" id="contactForm" method="POST">
+          <input type="text" name="name" placeholder="Digite seu nome" required>
+          <input type="email" name="email" placeholder="Digite seu e-mail" required>
+          <input type="hidden" name="_captcha" value="false">
+          <textarea name="text" cols="35" rows="10" placeholder="Como posso te ajudar?" required></textarea>
+          <br>
+          <input type="submit" value="Enviar" class="submit" required>
+        </form>
+        <!-- Mensagem de agradecimento (Após enviar formulário) -->
+        <div id="thankYouMessage" class="thank-you-message">
+          Obrigado! Aguarde nosso retorno!
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Rodapé -->
+  <section class="end">
+    <div class="last-text">
+      <p>by Julia Zanirato <img src="img/bussola.svg" alt=""> Alguns direitos reservados.</p>
+    </div>
 
+    <div class="top">
+      <!-- Seta adicionada ao seriço: boxicons -->
+       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+
+  </section>
   <!-- Scripts -->
   <script src="script.js"></script>
 </body>
